@@ -12,7 +12,18 @@ QPull is a Python script designed to manage files on an Oculus device. It allows
 
 ## Requirements
 - Python 3
-- ADB (Android Debug Bridge) installed and configured.
+
+- ADB (Android Debug Bridge) installed and configured. ADB is a versatile command-line tool used for communicating with an Android device. Here's how to install ADB on different operating systems:
+  - **Mac**:
+    - Install using Homebrew: `brew install android-platform-tools`
+    - Homebrew can be installed from [brew.sh](https://brew.sh/).
+  - **Linux**:
+    - Install using your distribution's package manager, for example on Ubuntu: `sudo apt-get install android-tools-adb`
+    - Ensure your Linux distribution is up-to-date to have the latest version of ADB.
+  - **Windows**:
+    - Download the ADB installer from [XDA Developers](https://www.xda-developers.com/install-adb-windows-macos-linux/).
+    - Run the installer and follow the on-screen instructions.
+
 - tqdm and humanize Python packages.
 
 ## Installation
