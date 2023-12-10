@@ -2,7 +2,7 @@
 # QPull - Oculus File Management Script
 
 ## Overview
-QPul is a Python script designed to manage files on an Oculus device. It allows for efficient transfer and deletion of screen recordings and screenshots from the Oculus to your computer.
+QPull is a Python script designed to manage files on an Oculus device. It allows for efficient transfer and deletion of screen recordings and screenshots from the Oculus to your computer.
 
 ## Features
 - Pull screen recordings and screenshots from Oculus device.
@@ -22,7 +22,7 @@ QPul is a Python script designed to manage files on an Oculus device. It allows 
    ```bash
    pip install tqdm humanize
    ```
-4. Connect your Oculus device via USB and enable file transfer / developer mode.
+4. Connect your Oculus device via USB and enable file transfer mode.
 
 ## Usage
 Run the script using Python, with the desired flags:
@@ -44,3 +44,34 @@ This project is licensed under the MIT License.
 
 ## Disclaimer
 This script is not officially affiliated with Oculus or its products. Use at your own risk.
+
+## Setup Script and Wrapper Installation
+The repository includes a setup script (`setup.py`) to simplify the installation and configuration of the `qpull` script.
+
+### Using the Setup Script
+1. Run the `setup.py` script in the root of the project directory.
+2. The script will:
+   - Create a Python virtual environment if it doesn't exist.
+   - Install required Python packages from `requirements.txt`.
+   - Create or update the `qpull` wrapper script in the specified location (or current working directory if not specified).
+   - Set execute permissions for the `qpull` wrapper (Unix-based systems).
+
+Example:
+```bash
+python setup.py /path/to/destination
+```
+
+### Using the Wrapper
+Once the setup script has been executed, you can use the `qpull` wrapper script to run the qpull Python script without manually activating the virtual environment. This is particularly useful on Unix-based systems. On Windows, you can directly run the `qpull.py` script from the virtual environment.
+
+Example (Unix-based systems):
+```bash
+/path/to/destination/qpull --all --delete
+```
+
+Example (Windows):
+```bash
+/path/to/virtualenv/Scripts/python /path/to/qpull.py --all --delete
+```
+
+Note: If you move the location of the project directory, you will need to run the setup script again to update the `qpull` wrapper.
