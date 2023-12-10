@@ -21,7 +21,7 @@ QPull is a Python script designed to manage files on an Oculus device. It allows
     - Install using your distribution's package manager, for example on Ubuntu: `sudo apt-get install android-tools-adb`
     - Ensure your Linux distribution is up-to-date to have the latest version of ADB.
   - **Windows**:
-    - Download the ADB installer from [XDA Developers](https://www.xda-developers.com/install-adb-windows-macos-linux/).
+    - Download the ADB installer from [Android developers site](https://developer.android.com/tools/releases/platform-tools).
     - Run the installer and follow the on-screen instructions.
 
 - tqdm and humanize Python packages.
