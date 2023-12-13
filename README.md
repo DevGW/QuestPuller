@@ -10,6 +10,27 @@ QPull is a Python script designed to manage files on an Oculus device. It allows
 - Option to delete files from the Oculus device after transfer.
 - Handle recordings, screenshots, or both simultaneously.
 
+## Utilities
+In addition to the main QPull script, this repository includes utility scripts to enhance your Oculus experience.
+
+### qprep.py
+The `qprep.py` script allows you to adjust various settings on your Oculus device through a series of ADB commands.
+
+#### Features
+- Set custom resolution for screen recordings.
+- Adjust bitrate and frame rate for recordings.
+- Modify foveation level for better visual quality.
+
+#### Usage
+Simply run the script, and it will execute a series of predefined ADB commands to optimize your Oculus device settings.
+
+Example:
+```bash
+qprep.py
+```
+
+Make sure ADB is properly configured and your Oculus device is connected to your computer before running any of these utilities.
+
 ## Requirements
 - Python 3
 
